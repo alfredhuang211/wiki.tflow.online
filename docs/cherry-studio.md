@@ -8,6 +8,18 @@
 - [Cherry Studio 模型服务设置](https://docs.cherry-ai.com/docs/en-us/pre-basic/settings/providers)
 - [Cherry Studio 默认模型设置](https://docs.cherry-ai.com/docs/en-us/pre-basic/settings/default-models)
 
+## Windows / macOS / Linux 差异
+
+Cherry Studio 是图形界面应用，Windows、macOS、Linux 的模型服务配置入口基本一致，都在「设置」→「模型服务」中完成。
+
+需要注意的差异：
+
+- Windows：安装包通常是 `.exe` 或 Microsoft Store 包，系统代理、证书和防火墙可能影响 API 连通性。
+- macOS：首次打开可能需要在「系统设置」→「隐私与安全性」中允许应用运行；如果使用公司代理，确认系统代理对 Cherry Studio 生效。
+- Linux：不同发行版可能使用 AppImage、deb、rpm 或 Flatpak 包。Flatpak 版本可能受沙箱影响，需要确认网络权限。
+
+API Key、Base URL 和模型名称在三个系统中填写方式相同。
+
 ## 新增模型提供商
 
 1. 打开 Cherry Studio。
