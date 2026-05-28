@@ -12,18 +12,46 @@
 
 用户级配置文件：
 
+macOS / Linux：
+
 ```text
 ~/.codex/config.toml
+```
+
+Windows：
+
+```text
+%USERPROFILE%\.codex\config.toml
 ```
 
 不要把供应商、API Key、Base URL 等机器本地配置写到项目内 `.codex/config.toml`。Codex 会忽略项目级配置里的 `model_provider`、`model_providers`、`openai_base_url` 等本地敏感配置。
 
 ## 使用 OpenAI 官方 API Key
 
-在 shell 中配置 API Key：
+macOS / Linux：
 
 ```bash
 export OPENAI_API_KEY="sk-..."
+```
+
+Windows PowerShell：
+
+```powershell
+$env:OPENAI_API_KEY = "sk-..."
+```
+
+Windows CMD：
+
+```cmd
+set OPENAI_API_KEY=sk-...
+```
+
+长期使用时，建议写入用户级环境变量。
+
+macOS / Linux 可写入 `~/.zshrc`、`~/.bashrc` 或当前 shell 的启动文件。Windows PowerShell 可写入当前用户环境变量：
+
+```powershell
+[Environment]::SetEnvironmentVariable("OPENAI_API_KEY", "sk-...", "User")
 ```
 
 设置默认模型：
@@ -52,8 +80,22 @@ openai_base_url = "https://tflow.online/v1"
 
 API Key 仍然从 `OPENAI_API_KEY` 读取：
 
+macOS / Linux：
+
 ```bash
 export OPENAI_API_KEY="your-api-key"
+```
+
+Windows PowerShell：
+
+```powershell
+$env:OPENAI_API_KEY = "your-api-key"
+```
+
+Windows CMD：
+
+```cmd
+set OPENAI_API_KEY=your-api-key
 ```
 
 ## 配置自定义模型提供商
@@ -74,8 +116,22 @@ wire_api = "responses"
 
 然后在 shell 中配置密钥：
 
+macOS / Linux：
+
 ```bash
 export MY_PROVIDER_API_KEY="your-api-key"
+```
+
+Windows PowerShell：
+
+```powershell
+$env:MY_PROVIDER_API_KEY = "your-api-key"
+```
+
+Windows CMD：
+
+```cmd
+set MY_PROVIDER_API_KEY=your-api-key
 ```
 
 字段说明：
@@ -118,6 +174,8 @@ Codex 的 `openai_base_url` 和 `model_providers.<id>.base_url` 表示 API base 
 ## 检查当前可见模型
 
 Codex CLI 提供模型调试命令：
+
+macOS / Linux / Windows PowerShell / Windows CMD：
 
 ```bash
 codex debug models
