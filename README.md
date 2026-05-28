@@ -16,7 +16,8 @@
 1. 安装 pnpm 和 Node.js
 2. `pnpm install --frozen-lockfile`
 3. `pnpm docs:build`
-4. 通过 `npx wrangler@latest pages deploy .vitepress/dist` 发布到 Cloudflare Pages
+4. 如果 Cloudflare Pages 项目不存在，先通过 `wrangler pages project create` 创建
+5. 通过 `npx wrangler@latest pages deploy .vitepress/dist` 发布到 Cloudflare Pages
 
 需要在 GitHub 仓库中配置：
 
