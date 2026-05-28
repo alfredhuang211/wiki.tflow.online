@@ -9,16 +9,22 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '文档', link: '/' },
+      { text: '平台介绍', link: '/platform' },
+      { text: 'Codex', link: '/codex' },
+      { text: 'Claude CLI', link: '/claude-cli' },
+      { text: 'Cherry Studio', link: '/cherry-studio' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '模型工具配置',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '配置总览', link: '/' },
+          { text: '平台介绍', link: '/platform' },
+          { text: 'Codex App 和 CLI', link: '/codex' },
+          { text: 'Claude CLI', link: '/claude-cli' },
+          { text: 'Cherry Studio', link: '/cherry-studio' }
         ]
       }
     ],
