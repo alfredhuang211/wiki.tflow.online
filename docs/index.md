@@ -7,6 +7,7 @@
 - [平台介绍](/platform)：注册、登录、API Key 创建、Base URL 和可用模型。
 - [Codex App 和 CLI 配置](/codex)：配置 OpenAI 官方服务、OpenAI 兼容服务、默认模型和临时模型。
 - [Claude CLI 配置](/claude-cli)：配置 `ANTHROPIC_BASE_URL`、`ANTHROPIC_API_KEY`、模型别名和固定模型。
+- [CC Switch 配置](/cc-switch)：用可视化工具或 CLI 统一管理 Claude Code、Codex、Gemini CLI 的 provider。
 - [Cherry Studio 配置](/cherry-studio)：新增模型提供商，配置 Base URL、API Key 和可用模型列表。
 
 ## 通用建议

@@ -13,6 +13,7 @@ export default defineConfig({
       { text: '平台介绍', link: '/platform' },
       { text: 'Codex', link: '/codex' },
       { text: 'Claude CLI', link: '/claude-cli' },
+      { text: 'CC Switch', link: '/cc-switch' },
       { text: 'Cherry Studio', link: '/cherry-studio' }
     ],
 
@@ -24,6 +25,7 @@ export default defineConfig({
           { text: '平台介绍', link: '/platform' },
           { text: 'Codex App 和 CLI', link: '/codex' },
           { text: 'Claude CLI', link: '/claude-cli' },
+          { text: 'CC Switch', link: '/cc-switch' },
           { text: 'Cherry Studio', link: '/cherry-studio' }
         ]
       }
